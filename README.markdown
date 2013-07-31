@@ -1,31 +1,34 @@
-# StoreEngine
-
-## Welcome to Frank's Monsterporium, a faux online store
+# Frank's Monsterporium
 
 Frank's Monsterporium has the best selection, nay, the ONLY selection of Frank's awesome creations on the web.
 
-This project was created for the gSchool StoreEngine Project. The background for this project can be found at: http://tutorials.jumpstartlab.com/projects/store_engine.html
+### Original Source
 
-#####Extensions Completed for This Project:
-ALL (Put Items on Sale, Product Reviews, Search, Transaction Processor)
+This project was created for the [gSchool StoreEngine Project](http://tutorials.jumpstartlab.com/projects/store_engine.html).
 
-#####Bonus Work on This Project:
-Four languages and locales supported!
+The original source for this codebase can be found at [github.com/raphweiner/store_engine](https://github.com/raphweiner/store_engine).
 
-### View the Live Site:
+### A version of the site is up on:
 
-http://franks-monsterporium.herokuapp.com/
+http://franks-monsterporium.herokuapp.com
 
-### Installing Frank's Creatures Shop on your computer:
+Log in as admin:
 
-Once you've git cloned this repo, make sure to run
+* email: demoXX+steve@jumpstartlab.com
+* password: password
 
-```bundle install```
+Log in as a regular user:
 
-```rake db:create```
+* email: demoXX+jeff@jumpstartlab.com
+* password: password
 
-```rake db:migrate```
+### Setup
 
-```rake db:seed``` to load the products
+Clone the repo, then run:
 
-Then, to view the site from your computer, you can then run ```unicorn``` to view it at http://localhost:8080.
+```plain
+$ bundle install
+$ bundle exec rake db:create db:migrate db:seed
+```
+
+You can then run ```unicorn``` to view the site [locally on port 8080](http://localhost:8080).
